@@ -10,10 +10,10 @@ Esta es una aplicación para tareas para uso práctico de PHP, MySQL y CSS; Este
 ```sql
 CREATE DATABASE IF NOT EXISTS `app_tareas` DEFAULT CHARACTER SET = 'utf8' DEFAULT COLLATE 'utf8_general_ci';
 ```
-3. Debemos de crear el archivo `conexion.php`, por defecto existe uno llamado `conexion-ejemplo.php` ese lo copiamos y le cambiamos el nombre a `conexion.php`. Podemos hacerlo con el siguiente comando:
+3. Dentro de la carpeta `modelos` debemos de crear el archivo `BDConexion.php`, por defecto existe uno llamado `BDConexionEjemplo.php` ese lo copiamos y le cambiamos el nombre a `BDconexion.php`. Podemos hacerlo con el siguiente comando:
 
 ```
-cp conexion-ejemplo.php conexion.php
+cp modelos\BDConexionEjemplo.php BDConexion.php
 ```
 
 4. Cambiamos las constantes en el archivo `conexion.php` para apuntar a nuestra base de datos dentro de nuestra computadora.
