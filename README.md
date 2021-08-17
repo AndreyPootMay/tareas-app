@@ -13,10 +13,10 @@ CREATE DATABASE IF NOT EXISTS `app_tareas` DEFAULT CHARACTER SET = 'utf8' DEFAUL
 3. Dentro de la carpeta `modelos` debemos de crear el archivo `BDConexion.php`, por defecto existe uno llamado `BDConexionEjemplo.php` ese lo copiamos y le cambiamos el nombre a `BDconexion.php`. Podemos hacerlo con el siguiente comando:
 
 ```
-cp modelos\BDConexionEjemplo.php BDConexion.php
+cp modelos\BDConexionEjemplo.php modelos\BDConexion.php
 ```
 
-4. Cambiamos las constantes en el archivo `conexion.php` para apuntar a nuestra base de datos dentro de nuestra computadora.
+4. Cambiamos las constantes en el archivo `modelos\BDConexion.php` para apuntar a nuestra base de datos dentro de nuestra computadora.
 
 5. Dentro del gestor de base de datos basta crear las tablas o alteraciones a la bd, esto se hace corriendo los archivos `.sql` dentro de la carpeta llamada _migraciones_.
 
