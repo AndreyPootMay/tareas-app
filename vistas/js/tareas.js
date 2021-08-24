@@ -17,7 +17,7 @@ $(".tablas").on("click", ".btnEditarTarea", function () {
         processData: false,
         dataType: "json",
         success: function (response) {
-            console.log(response);
+            console.table(response);
             $("#editarTarea").val(response.Tarea);
             $("#idTarea").val(response.id);
             $("#editar_nombre").val(response.nombre);

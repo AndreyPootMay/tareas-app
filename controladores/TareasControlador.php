@@ -27,14 +27,26 @@ class TareasControlador
                         "success"
                     );
 					</script>';
+                
+                echo '<script>
+                    setInterval(() => {
+                        window.location.href=window.location.href
+                    }, 1000);
+                    </script>';
             } else {
                 echo '<script>
-                new swal(
-                    "Algo falló!",
-                    "La tarea no pudo ser guardada, contacte con el administrador :(",
-                    "danger"
-                );
-				</script>';
+                    new swal(
+                        "Algo falló!",
+                        "La tarea no pudo ser guardada, contacte con el administrador :(",
+                        "danger"
+                    );
+                    </script>';
+                
+                echo '<script>
+                    setInterval(() => {
+                        window.location.href=window.location.href
+                    }, 1000);
+                    </script>';
             }
         }
     }
@@ -62,6 +74,12 @@ class TareasControlador
                         "success"
                     );
 					</script>';
+
+                echo '<script>
+                    setInterval(() => {
+                        window.location.href=window.location.href
+                    }, 1000);
+                    </script>';
             } else {
                 echo '<script>
                 new swal(
@@ -70,6 +88,12 @@ class TareasControlador
                     "danger"
                 );
 				</script>';
+
+                echo '<script>
+                setInterval(() => {
+                    window.location.href=window.location.href
+                }, 1000);
+                </script>';
             }
         }
     }
@@ -90,6 +114,12 @@ class TareasControlador
                         "success"
                     );
 					</script>';
+                
+                echo '<script>
+                setInterval(() => {
+                    window.location.href=`index.php`
+                }, 1000);
+                </script>';
             }
         }
     }

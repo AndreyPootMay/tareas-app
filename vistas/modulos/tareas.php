@@ -2,7 +2,7 @@
 $listaTareas = Tareas::listaTareas();
 ?>
 
-<div>
+<div class="m-5">
     <h4>Tareas</h4>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTarea">
         <i class="fa fa-plus"></i> Nueva tarea
@@ -57,20 +57,20 @@ $listaTareas = Tareas::listaTareas();
                         <div class="form-group">
                             <label for="nombre" class="form-label">Nombre</label>
                             <span class="input-group-addon"><i class="fa fa-book"></i></span>
-                            <input type="text" id="nombre" name="nombre" class="form-control input-lg" placeholder="Nombre de la tarea..." required>
+                            <input type="text" id="nombre" name="nombre" autocomplete="off" class="form-control input-lg" placeholder="Nombre de la tarea..." required>
                         </div>
                     </div>
                     <div class="mb-3">
                         <!-- Descripción -->
                         <label for="descripcion" class="form-label">Descripción</label>
                         <span class="input-group-addon"><i class="fa fa-pencil-square"></i></span>
-                        <textarea placeholder="Descripción de la tarea..." class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
+                        <textarea placeholder="Descripción de la tarea..." autocomplete="off" class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
                     </div>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-                    <button type="submit" class="btn btn-primary">Guardar tarea</button>
+                    <button type="button" class="btn btn-outline-danger pull-left" data-dismiss="modal">Salir</button>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
                 </div>
                 <?php
                 $crearTarea = new TareasControlador();
@@ -110,8 +110,8 @@ $listaTareas = Tareas::listaTareas();
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-                    <button type="submit" class="btn btn-primary">Editar tarea</button>
+                    <button type="button" class="btn btn-outline-danger pull-left" data-bs-dismiss="modal">Salir</button>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
                 </div>
                 <?php
                 $editarTarea = new TareasControlador();
