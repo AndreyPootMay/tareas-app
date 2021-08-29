@@ -69,7 +69,7 @@ $listaTareas = Tareas::listaTareas();
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger pull-left" data-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-outline-danger pull-left" data-bs-dismiss="modal">Salir</button>
                     <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
                 </div>
                 <?php
